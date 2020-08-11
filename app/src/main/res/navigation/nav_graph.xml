@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginPageFragment">
 
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="com.example.lymidateproject.fragment.LoginPageFragment"
+        android:label="fragment_login_page"
+        tools:layout="@layout/fragment_login_page">
+        <action
+            android:id="@+id/action_loginPageFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_loginPhone"
+            app:destination="@id/loginPhone" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.example.lymidateproject.fragment.HomePageFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" />
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.lymidateproject.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/loginPhone"
+        android:name="com.example.lymidateproject.fragment.LoginPhone"
+        android:label="fragment_login_phone"
+        tools:layout="@layout/fragment_login_phone">
+        <action
+            android:id="@+id/action_loginPhone_to_credentialsFragment"
+            app:destination="@id/credentialsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/credentialsFragment"
+        android:name="com.example.lymidateproject.fragment.CredentialsFragment"
+        android:label="fragment_credentials"
+        tools:layout="@layout/fragment_credentials" />
 </navigation>
