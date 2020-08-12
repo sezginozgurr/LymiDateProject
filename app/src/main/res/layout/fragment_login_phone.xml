@@ -8,11 +8,12 @@
     tools:context=".fragment.LoginPhone">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_resume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|end"
         android:layout_marginTop="56dp"
+        android:textColor="@android:color/white"
         android:layout_marginEnd="32dp"
         android:background="@drawable/custom_button"
         android:text="Devam Et" />
@@ -35,6 +36,7 @@
         android:layout_marginStart="80dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/round_border"
+        android:textColor="@android:color/white"
         android:drawableStart="@drawable/ic_person_24"
         android:hint="Telefon Numaranizi girin"
         android:inputType="phone"

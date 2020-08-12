@@ -43,5 +43,18 @@
         android:id="@+id/credentialsFragment"
         android:name="com.example.lymidateproject.fragment.CredentialsFragment"
         android:label="fragment_credentials"
-        tools:layout="@layout/fragment_credentials" />
+        tools:layout="@layout/fragment_credentials">
+        <action
+            android:id="@+id/action_credentialsFragment_to_afterPhoneFragment"
+            app:destination="@id/afterPhoneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/afterPhoneFragment"
+        android:name="com.example.lymidateproject.fragment.AfterPhoneFragment"
+        android:label="fragment_after_phone"
+        tools:layout="@layout/fragment_after_phone">
+        <action
+            android:id="@+id/action_afterPhoneFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
 </navigation>
