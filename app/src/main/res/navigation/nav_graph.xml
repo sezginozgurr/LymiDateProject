@@ -29,7 +29,11 @@
         android:id="@+id/registerFragment"
         android:name="com.example.lymidateproject.fragment.RegisterFragment"
         android:label="fragment_register"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_homePageFragment"
+            app:destination="@id/homePageFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginPhone"
         android:name="com.example.lymidateproject.fragment.LoginPhone"
@@ -56,5 +60,14 @@
         <action
             android:id="@+id/action_afterPhoneFragment_to_homePageFragment"
             app:destination="@id/homePageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.lymidateproject.fragment.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
     </fragment>
 </navigation>
