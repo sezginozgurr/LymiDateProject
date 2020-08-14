@@ -1,4 +1,4 @@
-package com.example.lymidateproject.fragment
+package com.example.lymidateproject.fragment.HomeFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.lymidateproject.R
 
-class HomePageFragment : Fragment() {
+
+class ProfileFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,6 +16,7 @@ class HomePageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false)
+        return inflater.inflate(R.layout.fragment_profile, container, false)
     }
+
 }

@@ -1,4 +1,4 @@
-package com.example.lymidateproject.fragment
+package com.example.lymidateproject.fragment.HomeFragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.lymidateproject.R
 
-class MessageFragment : Fragment() {
+
+class HomeFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -15,6 +16,6 @@ class MessageFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_message, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 }
